@@ -16,7 +16,7 @@ const webpackConfig = require('./webpack.config.js');
 
 
 gulp.task('js', done => {
-	gulp.src('./js/main.js')
+	gulp.src('./src/index.js')
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
 				title: 'Webpack',
